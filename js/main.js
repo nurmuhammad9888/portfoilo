@@ -12,42 +12,41 @@ window.onscroll = () =>{
     dark1.classList.remove("dark2");           
 }
 
-let kun =  document.querySelector(".kun");
+let light =  document.querySelector(".light");
 let dark1 = document.querySelector(".dark1");
-// let dark = document.querySelector(".dark");
 let chec = document.getElementById("checkbox");
-let sitting = document.querySelector(".sitting");
-let sitting12 = document.querySelector("#sitting12");
-let rang = document.getElementsByClassName("rang");
-let orqafon = document.getElementsByClassName("orqafon");
+let settengis = document.querySelector(".settengis");
+let settengisIcon = document.querySelector("#settengis-icon");
+let darkModeColor = document.getElementsByClassName("dark__mode-color");
+let darkMode = document.getElementsByClassName("dark__mode");
 let color = document.getElementsByClassName("color");
-let rasim1 = document.querySelector(".rasim1");
-let rasim2 = document.querySelector(".rasim2");
-let ram = document.getElementsByClassName("ram");
+// let rasim1 = document.querySelector(".rasim1");
+// let rasim2 = document.querySelector(".rasim2");
+let boxColor = document.getElementsByClassName("box-color");
 let hover = document.getElementsByClassName("hover");
 let hoverr = document.getElementsByClassName("hover-a");
 
 let btn = document.getElementsByClassName("btn")
 
-sitting.addEventListener("click", () => {
+settengis.addEventListener("click", () => {
     dark1.classList.toggle("dark2");
 })
 
 chec.onclick = () =>{
-    kun.classList.toggle("tun");
-    sitting12.classList.toggle("darkcolor");
+    light.classList.toggle("dark-wrap");
+    settengisIcon.classList.toggle("darkcolor");
 
-    for(let z = 0; z < rang.length; z++){
-        rang[z].classList.toggle("rang1");
+    for(let z = 0; z < darkModeColor.length; z++){
+        darkModeColor[z].classList.toggle("dark__mode-color1");
     }
-    for(let i = 0; i < orqafon.length; i++){
-        orqafon[i].classList.toggle("orqafon1");
+    for(let i = 0; i < darkMode.length; i++){
+        darkMode[i].classList.toggle("dark__mode1");
     }
     for(let j = 0; j < color.length; j++){
         color[j].classList.toggle("color1");
     }
-    for(let k = 0; k < ram.length; k++){
-        ram[k].classList.toggle("ram1");
+    for(let k = 0; k < boxColor.length; k++){
+        boxColor[k].classList.toggle("box-color1");
     };
     for(let a = 0; a < hover.length; a++){
         hover[a].classList.toggle("hover1");
@@ -62,7 +61,7 @@ chec.onclick = () =>{
 
 // type js
 let typing = new Typed (".typing" , {
-    strings: [ "Youtuber", " Web developer", " Blogger"],
+    strings: [ "Youtuber", " Web developer",],
     typeSpeed:150,
     backSpeed:30,
     loop:true
@@ -75,10 +74,9 @@ window.addEventListener("DOMContentLoaded", () =>{
     setTimeout(() =>{
         loder.style.opacity = '0'
         setTimeout(() =>{
-
             loder.style.display = 'none'
-        }, 500)
-    }, 1000)
+        }, 300)
+    }, 800)
 })
 // loder end
 

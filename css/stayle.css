@@ -80,6 +80,9 @@ header .navbar a:hover{
     letter-spacing: .2rem;
     color: var(--main-color);
 }
+.follow{
+    display: flex;
+}
 header .follow a{
     font-size: 2.5rem;
     color: #fff;
@@ -101,7 +104,13 @@ header .follow a:hover{
     cursor: pointer;
     display: none;
 }
-
+.header-social-icon svg{
+    width: 23px;
+    color: #000;
+}
+.dark__mode-color1 .header-social-icon svg{
+    color: #fff;
+}
 .checkbox{
     opacity: 0;
     position: absolute;
@@ -317,7 +326,7 @@ header .follow a:hover{
     gap: 1.5rem;
     padding: .5rem 0;
 }
-.trans{
+.email-text{
     text-transform: none;
     color: #666;
     font-size: 1.7rem;
@@ -325,7 +334,7 @@ header .follow a:hover{
     font-weight: 500;
 }
 .about .row-1 .content .box-container .box{
-       flex: 1 1 20rem;
+    flex: 1 1 20rem;
 }
 .about .row-1 .content .box-container span{
     color: var(--main-color);
@@ -383,7 +392,7 @@ header .follow a:hover{
 }
 .about .row-2 .box-container .box:hover{
     box-shadow:0  .2rem 2rem rgba(0, 0, 0, 0.7),
-               0 .5rem 1rem rgba(32, 29, 29, 0.7);
+    0 .5rem 1rem rgba(32, 29, 29, 0.7);
 }
 .about .row-2 .box-container .box h3{
     color: var(--main-color);
@@ -572,7 +581,7 @@ header .follow a:hover{
     color: #666;
     font-size: 1.7rem;
 }
-.trans1{
+.email-text1{
     color: #666;
     font-size: 1.7rem;
     text-transform: none;
@@ -644,8 +653,7 @@ footer span{
     color: var(--main-color);
 }
 
-
-.sitting{
+.settengis{
     position: absolute;
     right: 1rem;
     top: 1.5rem;
@@ -654,7 +662,7 @@ footer span{
     position: fixed;
     z-index: 99999;
 }
-.nastr{
+.settengis-wrap{
     background-color: aliceblue;
     margin-left: -40px;
     width: 55px;
@@ -663,7 +671,7 @@ footer span{
     padding: 5px;
     transition: margin-left 1s;
 }
-.nastr i{
+.settengis-wrap i{
     font-size: 25px;
     cursor: pointer;
 }
@@ -681,10 +689,10 @@ footer span{
     top: 0;
     
 }
-.tun{
+.dark-wrap{
     background-color: black;
 }
-.tun1{
+.dark-wrap1{
     background-color: rgba(0, 0, 0, 0.5);
 }
 .dark{
@@ -694,21 +702,22 @@ footer span{
 .darkcolor{
     color: #fff;
 }
-.rang1{
+.dark__mode-color1{
     color: white;
 }
-.experience .box-container .box .content .rang1,
-.service .box-container .box .rang1,
-.about .row-1 .content .rang1,
-.home .content .rang1,
-.contact .icons-container .icons .rang1,
-.kun1 .rang1 a,
-.kun1 .rang1{
+
+.experience .box-container .box .content .dark__mode-color1,
+.service .box-container .box .dark__mode-color1,
+.about .row-1 .content .dark__mode-color1,
+.home .content .dark__mode-color1,
+.contact .icons-container .icons .dark__mode-color1,
+.light1 .dark__mode-color1 a,
+.light1 .dark__mode-color1{
     color: white;
 }
-.orqafon1,
-.about .row-2 .box-container .orqafon1,
-.contact .row .orqafon1 {
+.dark__mode1,
+.about .row-2 .box-container .dark__mode1,
+.contact .row .dark__mode1 {
     background-color: #222;
 }
 .color1,
@@ -724,8 +733,8 @@ footer span{
 .contact .row form .color1{
     color: #ece7e7d8;
 }
-.portofolio .box-container .ram1,
-.contact .row .ram1{
+.portofolio .box-container .box-color1,
+.contact .row .box-color1{
     border: 1rem solid #222;
 }
 .service .box-container .hover1{
@@ -754,7 +763,6 @@ footer span{
     background-color: #444;
     letter-spacing: .2rem;
 }
-
 
 /* media */
 @media (max-width:1200px){
